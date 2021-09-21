@@ -6,7 +6,7 @@ const WeatherApp = (props) => {
 
     return (
         <div>
-            <h1>Weather Info App</h1>
+            <h1>Weather App</h1>
         </div>
     )
 }
