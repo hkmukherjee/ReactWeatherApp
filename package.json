@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build-webpack-dev": "webpack",
+    "build-webpack-prod": "webpack --env=production",
     "build-tsc": "tsc",
     "test": "jest",
     "start-dev": "webpack serve",
-    "start": "node src/build/server/server.js"
+    "start": "node src/build/server/server.js",
+    "heroku-postbuild": "npm run build-webpack-prod"
   },
   "repository": {
     "type": "git",

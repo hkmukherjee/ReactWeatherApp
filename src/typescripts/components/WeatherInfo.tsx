@@ -11,7 +11,7 @@ const WeatherInfo = (props) => {
     useEffect(() => {
         if(location) {
             axios
-            .get(`http://localhost:5000/weatherInfo/${location}`, {
+            .get(`https://weather-info-service-node.herokuapp.com/weatherInfo/${location}`, {
                 headers: {
                     "Content-Type": "application/json"
                 }
