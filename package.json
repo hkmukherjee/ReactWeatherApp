@@ -10,7 +10,7 @@
     "test": "jest",
     "start-dev": "webpack serve",
     "start": "node src/build/server/server.js",
-    "heroku-postbuild": "npm run build-webpack-prod"
+    "heroku-postbuild": "npm run build-tsc && npm run build-webpack-prod"
   },
   "repository": {
     "type": "git",
